@@ -1,0 +1,48 @@
+.contacts{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.name{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: cornflowerblue;
+}
+
+.number{
+    color: rgb(65, 65, 65);
+    font-size: 14px;
+}
+
+.delete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    color: white;
+    background-color:rgb(255, 73, 73);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    cursor: pointer;
+}
+
+.delete:hover,
+.delete:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}

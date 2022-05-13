@@ -2,7 +2,7 @@ import s from './ContactList.module.css';
 
 const ContactList = ({ data, filterName, onDeleteContact }) => {
     return <ul className={s.contacts}>
-      {data.filter(({name}) => name.toLowerCase().includes(filterName)).map(({id, name, number}) => (
+      {data.filter(({name}) => name.toLowerCase().includes(filterName.trim())).map(({id, name, number}) => (
         <li key={id} className={s.item}>
           <div>
             <p className={s.name}>{name}</p>
